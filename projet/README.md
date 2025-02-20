@@ -27,10 +27,10 @@ Les données incluent plusieurs entités principales :
 
 ## 🤝 Équipe et rôles
 Chaque groupe de 4 étudiant.e.s doit se répartir les responsabilités comme suit :
-1 **Chef de projet** : Coordination, documentation & analyse des besoins clients
-2 **Data Analyst** : Analyse et modélisation UML
-3 **Développeur SQL** : Création et gestion de la base de données
-4 **Data Engineer** : Rédaction et optimisation des requêtes SQL
+1. **Chef de projet** : Coordination, documentation & analyse des besoins clients
+2. **Data Analyst** : Analyse et modélisation UML
+3. **Développeur SQL** : Création et gestion de la base de données
+4. **Data Engineer** : Rédaction et optimisation des requêtes SQL
 
 > À la fin du projet, chaque membre de l'équipe devra remplir un **questionnaire** d'évaluation des pairs afin de garantir une répartition équitable du travail. Cette évaluation permettra de mesurer l'implication et la contribution de chaque étudiant dans le projet, favorisant ainsi un engagement collectif et une responsabilisation individuelle
 
