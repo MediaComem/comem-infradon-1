@@ -32,6 +32,8 @@ Chaque groupe de 4 étudiant.e.s doit se répartir les responsabilités comme su
 3 **Développeur SQL** : Création et gestion de la base de données
 4 **Data Engineer** : Rédaction et optimisation des requêtes SQL
 
+> À la fin du projet, chaque membre de l'équipe devra remplir un **questionnaire** d'évaluation des pairs afin de garantir une répartition équitable du travail. Cette évaluation permettra de mesurer l'implication et la contribution de chaque étudiant dans le projet, favorisant ainsi un engagement collectif et une responsabilisation individuelle
+
 ## 📦 Livrables attendus
 -  **Schéma UML** optimisé 
 -  **Script SQL** pour la création de la base de données et l'import des données
