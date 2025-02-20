@@ -22,7 +22,7 @@ Le cours fait l’objet d’une note de projet (40%), d'une note d'examen interm
 
 ## Cours
 
-1. Introduction [[PDF](https://raw.githubusercontent.com/MediaComem/comem-infradon-1/main/cours/01-introduction.pdf)]
+1. Introduction [[PDF](https://github.com/MediaComem/comem-infradon-1/blob/main/cours/01-introduction.pdf)]
 
 ## Projet
 
