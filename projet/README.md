@@ -26,7 +26,7 @@ Les données incluent plusieurs entités principales :
 - 📝 **Prescriptions** : Attribution des médicaments aux patients
 
 ## 🤝 Équipe et rôles
-Chaque groupe de 4 étudiant.e.s doit se répartir les responsabilités comme suit :
+Chaque groupe de 4/5 étudiant.e.s doit se répartir les responsabilités comme suit :
 1. **Chef de projet** : Coordination, documentation & analyse des besoins clients
 2. **Database architect** : Analyse et modélisation UML
 3. **Développeur SQL** : Création et gestion de la base de données
