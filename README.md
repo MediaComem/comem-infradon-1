@@ -45,5 +45,5 @@ Concevoir une base de données relationnelle pour un hôpital en partant d'un fi
 -   Vendredi 7 mars: Modélisation UML
 -   Vendredi 28 mars: Scripts création base de données et import des données
 -   Vendredi 2 mai: Requêtage et optimisation selon besoins clients (émis au 28 mars)
--   Jeudi 5 et Vendredi 6 mai: Présentation
--   Vendredi 6 mai: Rapport final
+-   Jeudi 5 et Vendredi 6 juin: Présentation
+-   Vendredi 6 juin: Rapport final
