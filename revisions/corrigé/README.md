@@ -10,25 +10,7 @@
 
 #### 🔹 Modèle UML
 
-**Entités** :
-
--   `Client (id_client PK)`
--   `Commande (id_commande PK, date, id_client FK)`
--   `Produit (id_produit PK, nom, prix)`
--   `LigneCommande (id_commande FK, id_produit FK, quantite)`
-
-**Relations** :
-
--   Un client **passe** plusieurs commandes → **1,N**
--   Une commande **contient** plusieurs produits via une **LigneCommande** → **1,N**
--   Un produit peut être présent dans plusieurs commandes → **N,N**
-
-**Types PostgreSQL** (exemples) :
-
--   `id_*`: `SERIAL` ou `INTEGER`
--   `nom`: `VARCHAR`
--   `prix`: `NUMERIC(10,2)`
--   `date`: `DATE`
+[![Modèle UML](UML.png)](UML.png)
 
 ---
 
