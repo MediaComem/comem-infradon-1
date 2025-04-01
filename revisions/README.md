@@ -74,6 +74,8 @@ Tables :
 11. **Quelle différence entre un index simple et un index composé ?**  
     Et pourquoi l’ordre des colonnes est-il important dans un index composé ?
 
+>
+
 ---
 
 ## 💡 Étude de cas
