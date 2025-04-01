@@ -105,35 +105,62 @@ ORDER BY total DESC;
 
 ### ❓ QCM Vrai / Faux
 
-1. ✅ Vrai — Un index accélère les requêtes de type `SELECT`.
-2. ✅ Vrai — Une `PRIMARY KEY` crée automatiquement un index.
-3. ❌ Faux — Un index n’accélère pas toutes les requêtes.
-4. ✅ Vrai — Les index ralentissent les `INSERT`.
-5. ✅ Vrai — `GIN` est utilisé pour la recherche plein texte.
-6. ❌ Faux — L’index par défaut est de type `BTree`.
-7. ✅ Vrai — On peut créer plusieurs index sur une table.
+1. Un index permet d'accélérer les requêtes de type SELECT.
+   ✔️ Vrai
+   👉 Les index fonctionnent comme des tables de correspondance : ils permettent à PostgreSQL de retrouver plus rapidement les lignes correspondant à une condition (ex : WHERE, JOIN, ORDER BY, etc.). C’est comme un sommaire dans un livre.
+
+2. Un index est automatiquement créé sur une colonne PRIMARY KEY.
+   ✔️ Vrai
+   👉 En PostgreSQL (et dans la majorité des SGBD), dès qu’on définit une colonne comme PRIMARY KEY, un index est automatiquement créé dessus pour garantir l’unicité et accélérer les recherches.
+
+3. Un index rend toujours toutes les requêtes plus rapides.
+   ❌ Faux
+   👉 Un index est utile pour lire plus vite (SELECT), mais il peut ralentir les opérations d’écriture (INSERT, UPDATE, DELETE), car l’index doit être mis à jour à chaque changement de données.
+   De plus, certains types de requêtes (ex : agrégats sans filtre, table entière lue) ne bénéficient pas forcément d’un index.
+
+4. Les index ralentissent les opérations d’insertion (INSERT).
+   ✔️ Vrai
+   👉 Chaque fois qu’on insère une nouvelle ligne, PostgreSQL doit mettre à jour tous les index concernés. Plus on a d’index, plus ces opérations d'insertion et modifications prennent du temps.
+
+5. Un index de type GIN est adapté à la recherche en texte intégral.
+   ✔️ Vrai
+   👉 L’index GIN (Generalized Inverted Index) est conçu pour les structures complexes comme tsvector, utilisé dans les recherches plein texte (to_tsvector, to_tsquery, etc.).
+
+6. Le type d’index par défaut dans PostgreSQL est Hash.
+   ❌ Faux
+   👉 Le type par défaut est BTree (arbre équilibré), utilisé pour les recherches d’égalité, d’intervalles, les tris (ORDER BY), etc.
+   Les index Hash existent, mais sont peu utilisés et ont des cas très spécifiques (uniquement égalité, pas d'ordre).
+
+7. On peut avoir plusieurs index sur une même table.
+   ✔️ Vrai
+   👉 Il est tout à fait possible (et courant) d’avoir plusieurs index sur une table, chacun répondant à un besoin différent (recherche rapide sur différentes colonnes, contraintes, tri, etc.).
 
 ---
 
 ### 🧠 Questions ouvertes
 
-**8. Définition d’un index :**
-Un index est une structure qui accélère l’accès aux données dans une table.
+8.  Donne une définition simple d’un index.
+    Un index est une structure de données (comme un dictionnaire ou un sommaire) utilisée par le SGBD pour accélérer l'accès aux lignes d'une table.
+    Il permet de retrouver rapidement les enregistrements répondant à une condition, sans devoir lire toute la table.
 
-**9. Cas pertinents pour créer un index :**
+9.  Dans quels cas est-il pertinent de créer un index ?
+    Il est pertinent de créer un index quand une colonne est souvent utilisée pour :
 
--   Colonne utilisée dans une clause WHERE
--   Colonne utilisée dans une jointure
+    -   ✅ Filtrer les résultats dans une clause WHERE
 
-**10. Inconvénients d’un index :**
+    -   ✅ Faire des jointures entre plusieurs tables
 
--   Ralentit les opérations d’écriture (INSERT, UPDATE)
--   Utilise plus d’espace disque
+    -   ✅ Bonus : Sur des colonnes utilisées dans ORDER BY ou GROUP BY, si la table est volumineuse.
 
-**11. Index simple vs composé :**
-Un index simple porte sur une seule colonne.
-Un index composé porte sur plusieurs colonnes.
-L’ordre est important : seules les requêtes respectant cet ordre bénéficieront de l’index.
+10. Cite deux inconvénients à l’utilisation d’index.
+
+    ❗ **Ralentissement des écritures**
+
+    À chaque INSERT, UPDATE ou DELETE, les index doivent être mis à jour → cela alourdit les performances.
+
+    🧠 **Consommation d’espace disque**
+
+    Chaque index est une structure supplémentaire stockée sur le disque → une table avec beaucoup d’index peut devenir très lourde.
 
 ---
 
