@@ -27,6 +27,7 @@ Le cours fait l’objet d’une note de projet (40%), d'une note d'examen interm
 3. Introduction à SQL [[PDF](https://github.com/MediaComem/comem-infradon-1/blob/main/cours/03-introduction-sql.pdf)]
 4. Normalisation [[PDF](https://github.com/MediaComem/comem-infradon-1/blob/main/cours/04-normalisation.pdf)]
 5. Optimisation [[PDF](https://github.com/MediaComem/comem-infradon-1/blob/main/cours/05-optimisation.pdf)]
+6. Sécurité & Rôles [[PDF](https://github.com/MediaComem/comem-infradon-1/blob/main/cours/06-securite.pdf)]
 
 ## Projet
 
@@ -44,6 +45,6 @@ Concevoir une base de données relationnelle pour un hôpital en partant d'un fi
 
 -   Vendredi 7 mars: Modélisation UML
 -   Vendredi 28 mars: Scripts création base de données et import des données
--   Vendredi 2 mai: Requêtage et optimisation selon besoins clients (émis au 28 mars)
+-   Vendredi 16 mai: Requêtage et optimisation selon besoins clients (émis au 1 mai)
 -   Jeudi 5 et Vendredi 6 juin: Présentation
 -   Vendredi 6 juin: Rapport final
