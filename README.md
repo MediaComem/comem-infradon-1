@@ -28,6 +28,8 @@ Le cours fait l’objet d’une note de projet (40%), d'une note d'examen interm
 4. Normalisation [[PDF](https://github.com/MediaComem/comem-infradon-1/blob/main/cours/04-normalisation.pdf)]
 5. Optimisation [[PDF](https://github.com/MediaComem/comem-infradon-1/blob/main/cours/05-optimisation.pdf)]
 6. Sécurité & Rôles [[PDF](https://github.com/MediaComem/comem-infradon-1/blob/main/cours/06-securite.pdf)]
+7. Transactions et conccurrence [[PDF](https://github.com/MediaComem/comem-infradon-1/blob/main/cours/07-transactions.pdf)]
+8. SQL spatial [[PDF](https://github.com/MediaComem/comem-infradon-1/blob/main/cours/08-sql-spatial.pdf)]
 
 ## Projet
 
