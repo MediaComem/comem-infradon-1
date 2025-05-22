@@ -48,7 +48,7 @@ Chaque groupe de 4/5 étudiant.e.s doit se répartir les responsabilités comme 
 -   **Rapport final** détaillant l’ensemble du projet et les différentes étapes du projet (schéma UML, scripts SQL, optimisation etc).
 -   **Présentation orale** du projet
 
-## Structure rapport final
+## Structure rapport final et présentation
 
 -   Soyez clairs, structurés, concis.
 -   Montrez votre progression : ce rapport est aussi une trace de votre apprentissage.
