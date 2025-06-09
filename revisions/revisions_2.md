@@ -67,55 +67,55 @@ CREATE TABLE tracker (
 
 1. Quelles sont les propriétés d'une transaction (ACID) ?
 
-[ ] Atomicité
+-   [ ] Atomicité
 
-[ ] Cohérence
+-   [ ] Cohérence
 
-[ ] Isolation
+-   [ ] Isolation
 
-[ ] Durabilité
+-   [ ] Durabilité
 
-[ ] Disponibilité
+-   [ ] Disponibilité
 
 2. Quel type d’index est le plus utilisé par défaut dans PostgreSQL ?
 
-[ ] B-tree
+-   [ ] B-tree
 
-[ ] Hash
+-   [ ] Hash
 
-[ ] GIN
+-   [ ] GIN
 
-[ ] GiST
+-   [ ] GiST
 
 3. Quelle forme normale élimine les dépendances transitives ?
 
-[ ] 1NF
+-   [ ] 1NF
 
-[ ] 2NF
+-   [ ] 2NF
 
-[ ] 3NF
+-   [ ] 3NF
 
-[ ] BCNF
+-   [ ] BCNF
 
 4. Quelle commande donne à un rôle le droit de SELECT sur une table ?
 
-[ ] SET RIGHT SELECT ON table TO role;
+-   [ ] SET RIGHT SELECT ON table TO role;
 
-[ ] GRANT SELECT ON table TO role;
+-   [ ] GRANT SELECT ON table TO role;
 
-[ ] ALLOW SELECT TO role;
+-   [ ] ALLOW SELECT TO role;
 
-[ ] PERMIT SELECT ON table;
+-   [ ] PERMIT SELECT ON table;
 
 5.  Qu’est-ce que le `REVOKE` permet ?
 
-[ ] De créer un rôle
+-   [ ] De créer un rôle
 
-[ ] De retirer un droit précédemment accordé
+-   [ ] De retirer un droit précédemment accordé
 
-[ ] De supprimer un utilisateur
+-   [ ] De supprimer un utilisateur
 
-[ ] De bloquer les mises à jour
+-   [ ] De bloquer les mises à jour
 
 ## Questions ouvertes
 
