@@ -1,6 +1,6 @@
-# 📘 Corrigé de l'Examen intermédiaire SQL – PostgreSQL
+# 📘 Corrigé de l'Examen intermédiaire InfraDon1
 
-## Exercice 1 - Diagramme UML
+## Exercice 1 - Diagramme UML (15 points)
 
 ![Diagramme UML](UML.png)
 
@@ -74,7 +74,7 @@ CREATE INDEX idx_inscriptions_date ON inscriptions(date);
 
 ---
 
-## 🧠 Exercice 3 – Normalisation (10 points)
+## Exercice 3 – Normalisation (10 points)
 
 Table de départ :  
 `nom_etudiant | email | nom_cours | nom_prof | date`
@@ -94,7 +94,7 @@ Table de départ :
 
 ---
 
-## 📊 Exercice 4 – Jointures & Agrégations (24 points)
+## Exercice 4 – Jointures & Agrégations (24 points)
 
 ### 1. Lister les cours avec le nombre d'étudiants inscrits
 
@@ -154,7 +154,7 @@ LIMIT 1; -- facultatif
 
 ---
 
-## 💬 Exercice 6 – Questions ouvertes (15 points)
+## Exercice 6 – Questions ouvertes (15 points)
 
 ### 1. Explique le principe de normalisation
 
