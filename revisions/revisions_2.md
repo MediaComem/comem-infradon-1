@@ -128,7 +128,7 @@ FROM animal a
 INNER JOIN tracker t ON a.id = t.animal_id --- on ne prend que les animaux avec un tracker
 INNER JOIN zone z1 ON a.zone_id = z1.id --- la zone déclarée de l'animal
 INNER JOIN zone z2 ON ST_Contains(z2.geom, t.last_position) --- la zone où se trouve le tracker
-WHERE z1.id <> z2.id; --- on compare les deux zones et onfiltre pour ne garder que les cas où l’animal est dans une autre zone que la sienne.
+WHERE z1.id <> z2.id; --- on compare les deux zones et on filtre pour ne garder que les cas où l’animal est dans une autre zone que la sienne.
 ```
 
 ### 10. Créer un rôle _ecologiste_ avec accès en lecture sur les animaux et zones
