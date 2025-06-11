@@ -106,6 +106,8 @@ GROUP BY park_id
 HAVING COUNT(*) > 1;
 ```
 
+> ⚠️ `HAVING` filtre les résultats agrégés (comme un `WHERE`, mais après le `GROUP BY`).
+
 ### 8. Lister les zones où la position d’un animal se trouve en dehors de leur géométrie
 
 ```SQL
@@ -116,15 +118,17 @@ INNER JOIN tracker t ON a.id = t.animal_id
 WHERE NOT ST_Contains(z.geom, t.last_position);
 ```
 
+> ⚠️ `ST_Contains(geomA, geomB)` vérifie si le polygone geomA contient le point ou la géométrie geomB. Ici, on vérifie si la zone de l’animal contient la dernière position GPS. `NOT ST_Contains(...)` inverse le test : on récupère les animaux en dehors de leur propre zone. L'ordre des paramètres compte ! ST_Contains(zone, point) et non l’inverse. ✅ À retenir : `ST_Contains(A, B)` = "est-ce que A englobe B ?". `NOT ST_Contains(...)` = "est-ce que B est en-dehors de A ?"
+
 ### 9. Trouver les animaux localisés dans une autre zone que la leur
 
 ```SQL
 SELECT a.id AS animal_id, a.name, z1.id AS declared_zone, z2.id AS located_zone
 FROM animal a
-INNER JOIN tracker t ON a.id = t.animal_id
-INNER JOIN zone z1 ON a.zone_id = z1.id
-INNER JOIN zone z2 ON ST_Contains(z2.geom, t.last_position)
-WHERE z1.id <> z2.id;
+INNER JOIN tracker t ON a.id = t.animal_id --- on ne prend que les animaux avec un tracker
+INNER JOIN zone z1 ON a.zone_id = z1.id --- la zone déclarée de l'animal
+INNER JOIN zone z2 ON ST_Contains(z2.geom, t.last_position) --- la zone où se trouve le tracker
+WHERE z1.id <> z2.id; --- on compare les deux zones et onfiltre pour ne garder que les cas où l’animal est dans une autre zone que la sienne.
 ```
 
 ### 10. Créer un rôle _ecologiste_ avec accès en lecture sur les animaux et zones
